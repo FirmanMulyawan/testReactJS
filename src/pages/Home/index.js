@@ -1,22 +1,21 @@
 import React from 'react'
-import '../Styles.css'
+import { Button, Gap } from '../../components'
+import './home.scss'
 
 const Home = () => {
 	return (
-		<div>
-			<h2>Home</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et est
-				vitae sapien hendrerit mattis sit amet sed purus. Nunc commodo sapien
-				risus, eget commodo libero molestie vel. Donec a tortor tincidunt,
-				lacinia orci eget, feugiat leo. Etiam volutpat molestie tempor. Mauris
-				id eros porttitor, hendrerit odio eget, laoreet mi. Vestibulum diam
-				erat, scelerisque id eros nec, iaculis pulvinar arcu. Mauris vestibulum
-				magna vitae molestie egestas. Vestibulum lobortis diam vel mauris
-				rutrum, eget maximus purus lacinia. Sed et tellus vel nibh vestibulum
-				pretium non sit amet tortor. Nulla in mattis ligula. Curabitur feugiat
-				eros nec odio pretium ullamcorper.
-			</p>
+		<div className='home-page-wrapper'>
+			<div className="title">
+				<p className="title">hallo World</p>
+			</div>
+			<Gap height={20} />
+			<div className='content-wrapper'></div>
+			<div className='pagination'>
+				<Button title='Previous' />
+				<Gap width={20} />
+				<Button title='Next' />
+			</div>
+			<Gap height={20} />
 		</div>
 	)
 }
